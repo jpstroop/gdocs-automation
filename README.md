@@ -1,5 +1,9 @@
 # Google Docs Automation
 
+A set of helpful functions for automating tasks in Google Drive and Google Docs. [WIP]
+
+[![Python 3.7](https://img.shields.io/badge/python-3.7-blue.svg)](https://www.python.org/downloads/release/python-372/)
+
 To get started:
 
 * Make sure you have a working [pipenv](https://pipenv.readthedocs.io/en/latest/) environment, with Python 3.7. Clone and run `pipenv install`.

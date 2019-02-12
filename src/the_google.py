@@ -55,9 +55,8 @@ class GoogleDrive(GoogleService):
         return self._service
 
 
-    def ls(self, page_size=25, page_token=None, query=None):
-        '''
-        Example queries:
+    def ls(self, page_size=25, page_token=None, query=None, v=False):
+        '''Example queries:
         https://developers.google.com/drive/api/v3/search-parameters#examples_for_fileslist
         Fields:
         https://developers.google.com/resources/api-libraries/documentation/drive/v3/python/latest/drive_v3.files.html#list
@@ -76,3 +75,17 @@ class GoogleDrive(GoogleService):
         else:
             items = list(map(Drive.format, items))
             return (next_page_token, items)
+
+    def touch(self, name, parent_id, v=False):
+        'Create a file'
+        pass
+
+    def mkdir(self, name, parent_id, p=False, v=False):
+        '''Create a directory. If p=True and name is a list, create intermediate
+        directories as necessary.'''
+        pass
+
+    def rm(self, id): # should this take a query?
+        pass
+
+    # What else?
